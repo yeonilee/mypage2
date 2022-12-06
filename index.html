@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Yeonii의 링크 모음" />
+        <meta property="og:description" content="☞코딩 기록일지☜" />
+        <meta property="og:image" content="재연이 사진.jpg" />
+        <title>Yeonii의 링크 모음</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: #9c9aa8d2;
+            }
+            .profile{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+
+                border: 3px solid white; /*테두리 두께, 실선, 색상*/
+
+                background-image: url('재연이 사진.jpg');
+                background-position: center;
+                background-size: cover;    /*이미지 첨부 시 항상 3줄 함께 작성: 이미지 url-위치-사진 전체 채움*/
+            }
+            .main{
+                color: black;
+                font-size: 20px;
+
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub{
+                color: black;
+                font-size: 14px;
+
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap{ /*구역으로 묶어준 뒤 이름 붙여주기*/
+                width: 300px;
+                margin: 30px auto 0px auto; /*여백 밀기: 위에서부터 시계 방향으로*/
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; /*구역 안의 내용을 정리하고 싶을 때 사용하며 4줄 함께 작성*/
+                
+                /*border: 4px solid white;
+                border-radius: 10px;
+                padding: 10px;
+                box-shadow: 3px 3px 5px 0px black;*/
+            }
+            .wrap > a { /*오른쪽 화살기호(a)로 표기하면 wrap으로 이름붙인 div안에 모든 a태그에 적용해줘 라는 뜻*/
+                width: 300px;
+                height: 50px;
+
+                background-color: white;
+                border-radius: 9px;
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none; /*하이퍼링크(a태크)에 원래 있는 밑줄 지움*/
+
+                box-shadow: 3px 3px 5px 0px black; /*글자  그림자: 오른쪽과 밑으로 얼마나 갈건지, 꼬리의 길이, 꼬리의 선명도*/
+            }
+            .wrap > a:hover {
+                background-color: #cfcfcf; /*hover: 마우스가 올라갔을 때 변화 주기*/
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap"> 
+            <div class="profile"></div>
+            <h1 class="main">"YEONI's PROFILE"</h1>
+            <p class="sub">☞코딩 기록일지☜</p>
+            <a target="_blank" href="https://wodus.tistory.com/">YEONI's TISTORY</a> 
+            <a target="_blank" href="https://yeonilee.github.io/mypage/">YEONI BUCKETLIST</a>
+            <a target="_blank" href="https://blog.naver.com/jy990211">FWIW:superslacker's BLOG</a>
+            <a target="_blank" href="https://www.instagram.com/j_droplet/">J_DROPLET's INSTAGRAM</a>  
+        </div>
+    </body>
+</html>
